@@ -1,0 +1,152 @@
+.main-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+width: 20%;
+margin: 0 auto;
+border: 1px solid #ef5366;
+background-color: #ef5366;
+color: white;
+text-align: left;
+    .content-box {
+      text-align: center;
+  
+      h2 {
+        margin-bottom: 10px;
+        text-align: left;
+font-size: 30px;
+      }
+  
+      p {
+        margin-bottom: 20px;
+     
+      }
+  
+      .line {
+        height: 2px;
+        width: 100%;
+        background-color: #eee;
+        margin-bottom: 20px;
+      }
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      .todo-box {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+  
+        li {
+          display: flex;
+          align-items: center;
+          width: 100%;
+  
+          span {
+            flex-grow: 1;
+          }
+  
+          input[type="checkbox"] {
+            margin-right: 10px;
+          }
+  
+          button {
+            background: none;
+            border: none;
+            cursor: pointer;
+  
+            ion-icon {
+              font-size: 20px;
+           color: white;
+            }
+  
+            &:hover {
+              ion-icon {
+                color: #333;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .main-tog {
+      margin-top: 20px;
+  
+      .box-tog {
+        display: flex;
+        align-items: center;
+  
+        p {
+          margin-right: 10px;
+        }
+  
+        input[type="checkbox"] + label {
+          position: relative;
+          display: inline-block;
+          width: 40px;
+          height: 20px;
+          background-color: #ccc;
+          border-radius: 20px;
+          transition: background-color 0.3s;
+  
+          &:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            background-color: #fff;
+            border-radius: 50%;
+            transition: transform 0.3s;
+          }
+        }
+  
+        input[type="checkbox"]:checked + label {
+          background-color: #4CAF50;
+  
+          &:after {
+            transform: translateX(20px);
+          }
+        }
+      }
+    }
+  
+    form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .add-box {
+
+        align-items: center;
+        margin-bottom: 10px;
+  
+        input[type="text"] {
+          padding: 5px;
+          margin-right: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+  
+        button {
+          padding: 5px 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          background-color: #ef5366;
+          color: #fff;
+  border: 1px solid white;
+          &:hover {
+            background-color: #b82b3b;
+          }
+        }
+      }
+    }
+  }
+  
